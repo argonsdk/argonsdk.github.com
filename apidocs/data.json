@@ -1,0 +1,1536 @@
+{
+    "project": {
+        "name": "Argon2 API",
+        "description": "Argon2 Augmented Reality API",
+        "version": "2.0.0",
+        "url": "http://argon.gatech.edu",
+        "logo": "http://argon.gatech.edu/demos/assets/argon2_logo_ios_57x57.png"
+    },
+    "files": {
+        "core/ARObject.js": {
+            "name": "core/ARObject.js",
+            "modules": {},
+            "classes": {
+                "ARObject": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "core/Channel.js": {
+            "name": "core/Channel.js",
+            "modules": {},
+            "classes": {
+                "Channel": 1,
+                "ChannelView": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "core/Tracking.js": {
+            "name": "core/Tracking.js",
+            "modules": {},
+            "classes": {
+                "TrackerManager": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "core/Transform3D.js": {
+            "name": "core/Transform3D.js",
+            "modules": {},
+            "classes": {
+                "Transform3D": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "core/arcore.js": {
+            "name": "core/arcore.js",
+            "modules": {},
+            "classes": {
+                "ARC": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "core/argon.js": {
+            "name": "core/argon.js",
+            "modules": {
+                "ARGON": 1
+            },
+            "classes": {
+                "ARGON": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "geo/GeoLocation.js": {
+            "name": "geo/GeoLocation.js",
+            "modules": {},
+            "classes": {
+                "GeoLocation": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "geo/GeoObject.js": {
+            "name": "geo/GeoObject.js",
+            "modules": {},
+            "classes": {
+                "GeoObject": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "geo/GeoSpot.js": {
+            "name": "geo/GeoSpot.js",
+            "modules": {},
+            "classes": {
+                "GeoSpot": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "geo/GeoSpotPanorama.js": {
+            "name": "geo/GeoSpotPanorama.js",
+            "modules": {},
+            "classes": {
+                "GeoSpotPanorama": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "tracking/FrameMarkerTarget.js": {
+            "name": "tracking/FrameMarkerTarget.js",
+            "modules": {},
+            "classes": {
+                "FrameMarkerTarget": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "tracking/TrackedObject.js": {
+            "name": "tracking/TrackedObject.js",
+            "modules": {},
+            "classes": {
+                "TrackedObject": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "tracking/TrackingTarget.js": {
+            "name": "tracking/TrackingTarget.js",
+            "modules": {},
+            "classes": {
+                "TrackingTarget": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "tracking/VuforiaDataSet.js": {
+            "name": "tracking/VuforiaDataSet.js",
+            "modules": {},
+            "classes": {
+                "VuforiaDataSet": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "tracking/VuforiaImageTarget.js": {
+            "name": "tracking/VuforiaImageTarget.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "tracking/VuforiaMultiImageTarget.js": {
+            "name": "tracking/VuforiaMultiImageTarget.js",
+            "modules": {},
+            "classes": {
+                "VuforiaImageTarget": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "util/MGRS.js": {
+            "name": "util/MGRS.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "ARGON": {
+            "name": "ARGON",
+            "submodules": {},
+            "classes": {
+                "ARObject": 1,
+                "Channel": 1,
+                "ChannelView": 1,
+                "TrackerManager": 1,
+                "Transform3D": 1,
+                "ARC": 1,
+                "ARGON": 1,
+                "GeoLocation": 1,
+                "GeoObject": 1,
+                "GeoSpot": 1,
+                "GeoSpotPanorama": 1,
+                "FrameMarkerTarget": 1,
+                "TrackedObject": 1,
+                "TrackingTarget": 1,
+                "VuforiaDataSet": 1,
+                "VuforiaImageTarget": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "tracking/VuforiaMultiImageTarget.js",
+            "line": 1
+        }
+    },
+    "classes": {
+        "ARObject": {
+            "name": "ARObject",
+            "shortname": "ARObject",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ARGON",
+            "file": "core/ARObject.js",
+            "line": 1,
+            "author": "hafez",
+            "is_constructor": 1,
+            "description": "Base object for proxying different scene-graph representations"
+        },
+        "Channel": {
+            "name": "Channel",
+            "shortname": "Channel",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ARGON",
+            "file": "core/Channel.js",
+            "line": 1,
+            "params": [
+                {
+                    "name": "uri",
+                    "description": "URI of the channel",
+                    "type": "String"
+                }
+            ],
+            "description": "A model which backs Argon channels."
+        },
+        "ChannelView": {
+            "name": "ChannelView",
+            "shortname": "ChannelView",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ARGON",
+            "file": "core/Channel.js",
+            "line": 14,
+            "description": "Wraps an iframe element into which a channel is renderered.\n             ChannelViews are created automatically when an AR Channel is loaded."
+        },
+        "TrackerManager": {
+            "name": "TrackerManager",
+            "shortname": "TrackerManager",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ARGON",
+            "file": "core/Tracking.js",
+            "line": 1,
+            "author": "hafez",
+            "is_constructor": 1,
+            "description": "Mediator which provides a unified interface to various tracking technologies"
+        },
+        "Transform3D": {
+            "name": "Transform3D",
+            "shortname": "Transform3D",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ARGON",
+            "file": "core/Transform3D.js",
+            "line": 1,
+            "author": "hafez",
+            "is_constructor": 1,
+            "description": "A 4x4 Transformation Matrix in column-major order.  Transform3D provides a runtime and renderer independent transformation representation"
+        },
+        "ARC": {
+            "name": "ARC",
+            "shortname": "ARC",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ARGON",
+            "file": "core/arcore.js",
+            "line": 16,
+            "author": "hafez",
+            "static": 1,
+            "description": "To Do"
+        },
+        "ARGON": {
+            "name": "ARGON",
+            "shortname": "ARGON",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ARGON",
+            "namespace": "",
+            "file": "core/argon.js",
+            "line": 6,
+            "author": "hafez",
+            "description": "ARGON object provides global access to AR-specific APIs.\n             See the Argon AR-WebApp Programming Guide for detailed information\n             on how Argon manages the application & rendering environments and to learn\n             how to efficiently use Argon in your application."
+        },
+        "GeoLocation": {
+            "name": "GeoLocation",
+            "shortname": "GeoLocation",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ARGON",
+            "namespace": "",
+            "file": "geo/GeoLocation.js",
+            "line": 1,
+            "author": "hafez",
+            "description": "Encodes a geo location & provides LLA & UTM coordinate representations"
+        },
+        "GeoObject": {
+            "name": "GeoObject",
+            "shortname": "GeoObject",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ARGON",
+            "namespace": "",
+            "file": "geo/GeoObject.js",
+            "line": 1,
+            "extends": "THREE.Object3D",
+            "description": "A GeoObject acts as a geo-positioned container for content.\n\tGeoObjects are automatically converted from UTM coordinates to a local x,y,z in the scene.\n\tContent added to GeoObjects will be registered in the world, anchored at the GeoObjects position.",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "latitude",
+                    "description": "Latitude in degrees",
+                    "type": "Number"
+                },
+                {
+                    "name": "longitude",
+                    "description": "Longitude in degrees",
+                    "type": "Number"
+                },
+                {
+                    "name": "altitude",
+                    "description": "Altitude in meters",
+                    "type": "Number"
+                }
+            ]
+        },
+        "GeoSpot": {
+            "name": "GeoSpot",
+            "shortname": "GeoSpot",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ARGON",
+            "namespace": "",
+            "file": "geo/GeoSpot.js",
+            "line": 4,
+            "is_constructor": 1,
+            "description": "A GeoSpot represents a known, fixed location. GeoSpots can be used to obtain tighter registration by overriding the device GPS when a user indicates that they are at the precise location.  GeoSpots can also be used for for \"remote\" AR experiences by leveraging panoramic imagery taken from the location."
+        },
+        "GeoSpotPanorama": {
+            "name": "GeoSpotPanorama",
+            "shortname": "GeoSpotPanorama",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ARGON",
+            "namespace": "",
+            "file": "geo/GeoSpotPanorama.js",
+            "line": 1,
+            "description": "Encapsulates a panorama associated with a GeoSpot",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "urls",
+                    "description": "An Array of URLs to the panorama images. URLs should be ordered Right, Left, Top, Bottom, Front, Back and assume North-alignment.",
+                    "type": "Array"
+                }
+            ]
+        },
+        "FrameMarkerTarget": {
+            "name": "FrameMarkerTarget",
+            "shortname": "FrameMarkerTarget",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ARGON",
+            "namespace": "",
+            "file": "tracking/FrameMarkerTarget.js",
+            "line": 1,
+            "author": "hafez",
+            "extends": "TrackingTarget",
+            "description": "An opaque reference to a FrameMarker Vision Target",
+            "is_constructor": 1
+        },
+        "TrackedObject": {
+            "name": "TrackedObject",
+            "shortname": "TrackedObject",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ARGON",
+            "namespace": "",
+            "file": "tracking/TrackedObject.js",
+            "line": 1,
+            "author": "hafez",
+            "extends": "ARObject",
+            "description": "A TrackedObject acts as a container for content that is to be attached to a given Trackable/TrackingTarget. When attached to a TrackingTarget, the TrackedObject is centered on the Target."
+        },
+        "TrackingTarget": {
+            "name": "TrackingTarget",
+            "shortname": "TrackingTarget",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ARGON",
+            "namespace": "",
+            "file": "tracking/TrackingTarget.js",
+            "line": 1,
+            "author": "hafez",
+            "abstract": "",
+            "description": "An abstract class that represents a trackable target (i.e. an image target, or magnetic sensing target)",
+            "is_constructor": 1
+        },
+        "VuforiaDataSet": {
+            "name": "VuforiaDataSet",
+            "shortname": "VuforiaDataSet",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ARGON",
+            "namespace": "",
+            "file": "tracking/VuforiaDataSet.js",
+            "line": 1,
+            "author": "hafez",
+            "description": "Represents a VuforiaDataSet.",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "inURL",
+                    "description": "the URL of the dataset XML file",
+                    "type": "String"
+                },
+                {
+                    "name": "inTargets",
+                    "description": "An associative Array of VuforiaImageTargets in the dataset.",
+                    "type": "Array"
+                }
+            ]
+        },
+        "VuforiaImageTarget": {
+            "name": "VuforiaImageTarget",
+            "shortname": "VuforiaImageTarget",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "ARGON",
+            "namespace": "",
+            "file": "tracking/VuforiaMultiImageTarget.js",
+            "line": 1,
+            "author": "hafez",
+            "extends": "TrackingTarget",
+            "description": "An opaque reference to a Vuforia Image Target",
+            "is_constructor": 1
+        }
+    },
+    "classitems": [
+        {
+            "file": "core/ARObject.js",
+            "line": 26,
+            "itemtype": "method",
+            "name": "add",
+            "params": [
+                {
+                    "name": "inObject",
+                    "description": "An instance of an ARObject or THREE.Object3D",
+                    "type": "ARObject"
+                }
+            ],
+            "description": "Adds an ARObject or THREE.Object3D as a child",
+            "class": "ARObject"
+        },
+        {
+            "file": "core/ARObject.js",
+            "line": 38,
+            "itemtype": "method",
+            "name": "setTransform",
+            "params": [
+                {
+                    "name": "inTransform",
+                    "description": "set the transform of this ARObject to inTransform",
+                    "type": "Transform3D"
+                }
+            ],
+            "class": "ARObject"
+        },
+        {
+            "file": "core/Channel.js",
+            "line": 25,
+            "is_constructor": 1,
+            "class": "ChannelView"
+        },
+        {
+            "file": "core/Tracking.js",
+            "line": 17,
+            "access": "private",
+            "tagname": "",
+            "itemtype": "method",
+            "name": "initializeTracking",
+            "description": "Initializes the native tracking engine",
+            "class": "TrackerManager"
+        },
+        {
+            "file": "core/Tracking.js",
+            "line": 27,
+            "access": "private",
+            "tagname": "",
+            "itemtype": "method",
+            "name": "loadVuforiaDataSetFromURL",
+            "params": [
+                {
+                    "name": "datasetURL",
+                    "description": "the URL of the target Vuforia Data Set",
+                    "type": "String"
+                }
+            ],
+            "class": "TrackerManager"
+        },
+        {
+            "file": "core/Transform3D.js",
+            "line": 24,
+            "itemtype": "method",
+            "name": "set",
+            "description": "sets the values of the Transformation Matrix",
+            "class": "Transform3D"
+        },
+        {
+            "file": "core/Transform3D.js",
+            "line": 39,
+            "itemtype": "method",
+            "name": "setTransform",
+            "params": [
+                {
+                    "name": "Set",
+                    "description": "the transform values using another Transform3D object",
+                    "type": "Transform3D"
+                }
+            ],
+            "class": "Transform3D"
+        },
+        {
+            "file": "core/Transform3D.js",
+            "line": 51,
+            "itemtype": "method",
+            "name": "toThreeMatrix",
+            "return": {
+                "description": "Returns a fully initialized THREE.Matrix4 with the values from this Transform3D",
+                "type": "THREE.Matrix4"
+            },
+            "class": "Transform3D"
+        },
+        {
+            "file": "core/argon.js",
+            "line": 23,
+            "itemtype": "property",
+            "name": "geolocation",
+            "type": "AR.GeoLocation",
+            "description": "the device's current GeoPosition return as a GeoLocation\n{{crossLink \"AR.GeoLocation\"}}{{/crossLink}}",
+            "class": "ARGON",
+            "module": "ARGON"
+        },
+        {
+            "file": "core/argon.js",
+            "line": 42,
+            "itemtype": "property",
+            "name": "World",
+            "type": "THREE.Scene",
+            "description": "Provides a World-Positioned container for Augmentataions. \n                {{crossLink \"AR.GeoObject\"}}{{/crossLink}}",
+            "class": "ARGON",
+            "module": "ARGON"
+        },
+        {
+            "file": "core/argon.js",
+            "line": 336,
+            "itemtype": "method",
+            "name": "loadDataset",
+            "description": "Downloads & Activates the DataSet from the specified URI",
+            "params": [
+                {
+                    "name": "inDataSetURI",
+                    "description": "a fully qualified URI string for a dataset",
+                    "type": "String"
+                }
+            ],
+            "class": "ARGON",
+            "module": "ARGON"
+        },
+        {
+            "file": "core/argon.js",
+            "line": 367,
+            "description": "Fired when a DataSet is loaded",
+            "itemtype": "event",
+            "name": "AR.DataSetLoadedEvent",
+            "params": [
+                {
+                    "name": "an",
+                    "description": "initialized VuforiaDataSet object",
+                    "type": "VuforiaDataSet"
+                }
+            ],
+            "class": "ARGON",
+            "module": "ARGON"
+        },
+        {
+            "file": "core/argon.js",
+            "line": 399,
+            "itemtype": "event",
+            "name": "AR.ArgonReadyEvent",
+            "description": "the ArgonReadyEvent is fired once Argon finished loading and is typically the \n             starting point to your AR application",
+            "class": "ARGON",
+            "module": "ARGON"
+        },
+        {
+            "file": "core/argon.js",
+            "line": 467,
+            "description": "THREE JS Integration",
+            "class": "ARGON",
+            "module": "ARGON"
+        },
+        {
+            "file": "core/argon.js",
+            "line": 470,
+            "description": "Sets the ThreeJS Camera object. When using the Argon renderer, this method is called automatically.",
+            "itemtype": "method",
+            "name": "setThreeCamera",
+            "params": [
+                {
+                    "name": "camera",
+                    "description": "an instance of a THREE.Camera",
+                    "type": "THREE.Camera"
+                }
+            ],
+            "class": "ARGON",
+            "module": "ARGON"
+        },
+        {
+            "file": "core/argon.js",
+            "line": 486,
+            "description": "Sets the ThreeJS WebGLRenderer object. When using the Argon renderer, this method is called automatically.",
+            "itemtype": "method",
+            "name": "setThreeWebGLRenderer",
+            "params": [
+                {
+                    "name": "webglRenderer",
+                    "description": "a THREE.WebGLRenderer instance",
+                    "type": "THREE.WebGLRenderer"
+                }
+            ],
+            "class": "ARGON",
+            "module": "ARGON"
+        },
+        {
+            "file": "core/argon.js",
+            "line": 495,
+            "description": "Sets the CSSRenderer reference. When using the Argon renderer, this method is called automatically.",
+            "itemtype": "method",
+            "name": "setThreeCSSRenderer",
+            "params": [
+                {
+                    "name": "cssRenderer",
+                    "description": "a THREE.CSSRenderer instance",
+                    "type": "THREE.CSSRenderer"
+                }
+            ],
+            "class": "ARGON",
+            "module": "ARGON"
+        },
+        {
+            "file": "geo/GeoLocation.js",
+            "line": 10,
+            "itemtype": "property",
+            "name": "utm",
+            "type": "Object",
+            "description": "UTM representation of this GeoLocation. Access the 'easting', 'northing', 'zoneLetter', and 'zoneNumber' properties of the returned object. Easting / Northing are in meters. Argon uses UTM internally to do geo-positioning.\nSee [Universal Transverse Mercator](http://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system/)",
+            "class": "GeoLocation",
+            "module": "ARGON"
+        },
+        {
+            "file": "geo/GeoLocation.js",
+            "line": 18,
+            "itemtype": "property",
+            "name": "lla",
+            "type": "Object",
+            "description": "WGS84 (Lat, Long, Alt) representation of this GeoLocation.  Access the 'latitude', 'longitude' and 'altitude' properties of the returned object to obtain the values. Latitude/Longitude are in degrees, Altitude is in meters.",
+            "class": "GeoLocation",
+            "module": "ARGON"
+        },
+        {
+            "file": "geo/GeoLocation.js",
+            "line": 38,
+            "description": "Sets the GeoPosition, the GeoLocation object automatically converts & stores locations interally as UTM",
+            "itemtype": "method",
+            "name": "setGeoPosition",
+            "params": [
+                {
+                    "name": "lat",
+                    "description": "latitude in degrees",
+                    "type": "Number"
+                },
+                {
+                    "name": "lon",
+                    "description": "longitude in degrees",
+                    "type": "Number"
+                },
+                {
+                    "name": "alt",
+                    "description": "altitude in meters",
+                    "type": "Number"
+                }
+            ],
+            "class": "GeoLocation",
+            "module": "ARGON"
+        },
+        {
+            "file": "geo/GeoLocation.js",
+            "line": 56,
+            "description": "Sets the GeoPosition using the UTM representation.",
+            "itemtype": "method",
+            "name": "setGeoPositionUTM",
+            "params": [
+                {
+                    "name": "east",
+                    "description": "UTM Easting value in meters",
+                    "type": "Number"
+                },
+                {
+                    "name": "north",
+                    "description": "UTM Northing value in meters",
+                    "type": "Number"
+                },
+                {
+                    "name": "alt",
+                    "description": "Altitude in meters",
+                    "type": "Number"
+                },
+                {
+                    "name": "zoneLet",
+                    "description": "UTM Zone Letter",
+                    "type": "String"
+                },
+                {
+                    "name": "zoneNum",
+                    "description": "UTM Zone Number",
+                    "type": "Number"
+                }
+            ],
+            "class": "GeoLocation",
+            "module": "ARGON"
+        },
+        {
+            "file": "geo/GeoLocation.js",
+            "line": 74,
+            "itemtype": "method",
+            "name": "latLongToUTM",
+            "description": "Converts the input lat, lon, alt to UTM",
+            "return": {
+                "description": "Object with easting, northing, zoneNumber, and zoneLetter properties",
+                "type": "Object"
+            },
+            "class": "GeoLocation",
+            "module": "ARGON"
+        },
+        {
+            "file": "geo/GeoObject.js",
+            "line": 18,
+            "itemtype": "property",
+            "name": "geolocation",
+            "type": "GeoLocation",
+            "description": "Object that encapsulates the position of this GeoObject",
+            "class": "GeoObject",
+            "module": "ARGON"
+        },
+        {
+            "file": "geo/GeoSpot.js",
+            "line": 12,
+            "itemtype": "property",
+            "name": "geoLocation",
+            "type": "{GeoLocation}",
+            "description": "Pointer to object that encapsulates the position/orientation of this GeoSpot",
+            "class": "GeoSpot",
+            "module": "ARGON"
+        },
+        {
+            "file": "geo/GeoSpot.js",
+            "line": 18,
+            "itemtype": "property",
+            "name": "panoramas",
+            "type": "{Dictionary}",
+            "description": "A dictionary of GeoSpotPanorama objects associated with this GeoSpot",
+            "class": "GeoSpot",
+            "module": "ARGON"
+        },
+        {
+            "file": "geo/GeoSpotPanorama.js",
+            "line": 9,
+            "itemtype": "property",
+            "name": "uuid",
+            "type": "{String}",
+            "default": "null",
+            "class": "GeoSpotPanorama",
+            "module": "ARGON"
+        },
+        {
+            "file": "geo/GeoSpotPanorama.js",
+            "line": 16,
+            "itemtype": "property",
+            "name": "urls",
+            "type": "{Array}",
+            "class": "GeoSpotPanorama",
+            "module": "ARGON"
+        },
+        {
+            "file": "geo/GeoSpotPanorama.js",
+            "line": 33,
+            "itemtype": "method",
+            "name": "hide",
+            "description": "Hide the panorama",
+            "class": "GeoSpotPanorama",
+            "module": "ARGON"
+        },
+        {
+            "file": "tracking/FrameMarkerTarget.js",
+            "line": 10,
+            "itemtype": "property",
+            "name": "markerId",
+            "type": "Number",
+            "description": "The Marker ID of this Frame Marker.  Frame markers can range from 0-256",
+            "class": "FrameMarkerTarget",
+            "module": "ARGON"
+        },
+        {
+            "file": "tracking/FrameMarkerTarget.js",
+            "line": 17,
+            "itemtype": "property",
+            "name": "markerName",
+            "type": "Number",
+            "description": "Arbitrary name for the marker",
+            "class": "FrameMarkerTarget",
+            "module": "ARGON"
+        },
+        {
+            "file": "tracking/FrameMarkerTarget.js",
+            "line": 24,
+            "itemtype": "property",
+            "name": "markerSize",
+            "type": "NUmber",
+            "description": "Size of the marker in millimeters.",
+            "class": "FrameMarkerTarget",
+            "module": "ARGON"
+        },
+        {
+            "file": "tracking/TrackedObject.js",
+            "line": 10,
+            "itemtype": "property",
+            "name": "trackingTarget",
+            "type": "TrackingTarget",
+            "description": "reference to the TrackingTarget to which the TrackedObject is attached.\nA TrackedObject can only be attached to a single TrackingTarget simultaneously.",
+            "class": "TrackedObject",
+            "module": "ARGON"
+        },
+        {
+            "file": "tracking/TrackedObject.js",
+            "line": 18,
+            "itemtype": "property",
+            "name": "autoHide",
+            "type": "Boolean",
+            "default": "true",
+            "description": "With this property set to true, the receiver and all of its children will be hidden when the associated TrackingTarget \nis not in view of the device's camera",
+            "class": "TrackedObject",
+            "module": "ARGON"
+        },
+        {
+            "file": "tracking/TrackedObject.js",
+            "line": 27,
+            "itemtype": "property",
+            "name": "autoHideAfterFrames",
+            "type": "Number",
+            "default": "1",
+            "description": "If autoHide is set to true, the TrackedObject and its descendents will be hidden after the specificed number of frames.\nDefault is 1 frame.",
+            "class": "TrackedObject",
+            "module": "ARGON"
+        },
+        {
+            "file": "tracking/TrackedObject.js",
+            "line": 49,
+            "itemtype": "method",
+            "name": "setTarget",
+            "description": "Attaches the TrackedObject to the TrackingTarget specified by 'target'",
+            "params": [
+                {
+                    "name": "target",
+                    "description": "an instance of a TrackingTarget such as a VuforiaImageTarget",
+                    "type": "TrackingTarget"
+                }
+            ],
+            "class": "TrackedObject",
+            "module": "ARGON"
+        },
+        {
+            "file": "tracking/TrackingTarget.js",
+            "line": 12,
+            "itemtype": "property",
+            "name": "trackableId",
+            "description": "a string used to uniquely identify the target",
+            "type": "String",
+            "default": "0",
+            "class": "TrackingTarget",
+            "module": "ARGON"
+        },
+        {
+            "file": "tracking/TrackingTarget.js",
+            "line": 20,
+            "itemtype": "property",
+            "name": "trackedObjects",
+            "description": "Array of TrackedObjects currently bound to the TrackingTarget",
+            "type": "Array",
+            "default": "none",
+            "class": "TrackingTarget",
+            "module": "ARGON"
+        },
+        {
+            "file": "tracking/TrackingTarget.js",
+            "line": 28,
+            "itemtype": "property",
+            "name": "_numFramesNotVisible",
+            "access": "private",
+            "tagname": "",
+            "type": "Number",
+            "description": "Internal state variable to keep track of the number of frames the TrackedObjects target is not visible",
+            "class": "TrackingTarget",
+            "module": "ARGON"
+        },
+        {
+            "file": "tracking/TrackingTarget.js",
+            "line": 36,
+            "itemtype": "property",
+            "name": "_lastVisible",
+            "access": "private",
+            "tagname": "",
+            "type": "Boolean",
+            "description": "Private flag indicating whether the TrackedObject was visible during the last frame",
+            "class": "TrackingTarget",
+            "module": "ARGON"
+        },
+        {
+            "file": "tracking/TrackingTarget.js",
+            "line": 44,
+            "itemtype": "property",
+            "name": "_visible",
+            "access": "private",
+            "tagname": "",
+            "type": "Boolean",
+            "description": "Private flag indicating whether the TrackedObject is visible during the current frame",
+            "class": "TrackingTarget",
+            "module": "ARGON"
+        },
+        {
+            "file": "tracking/TrackingTarget.js",
+            "line": 57,
+            "access": "private",
+            "tagname": "",
+            "itemtype": "method",
+            "name": "setTrackableId",
+            "description": "sets the trackable id associated with this target",
+            "params": [
+                {
+                    "name": "trackableId",
+                    "description": "a string used to uniquely identify the target",
+                    "type": "String"
+                }
+            ],
+            "class": "TrackingTarget",
+            "module": "ARGON"
+        },
+        {
+            "file": "tracking/TrackingTarget.js",
+            "line": 67,
+            "access": "private",
+            "tagname": "",
+            "itemtype": "method",
+            "name": "onUpdateTransform",
+            "description": "callback executed in response to the trackables transform being updated",
+            "params": [
+                {
+                    "name": "inTransform",
+                    "description": "the new transform",
+                    "type": "Transform3D"
+                }
+            ],
+            "class": "TrackingTarget",
+            "module": "ARGON"
+        },
+        {
+            "file": "tracking/TrackingTarget.js",
+            "line": 82,
+            "itemtype": "method",
+            "name": "addTrackedObject",
+            "description": "adds a TrackedObject to the target. The transforms of TrackedObjects added using this method are automatically updated whenever the TrackingTarget receives new data.",
+            "params": [
+                {
+                    "name": "arObject",
+                    "description": "a TrackedObject instance",
+                    "type": "TrackedObject"
+                }
+            ],
+            "class": "TrackingTarget",
+            "module": "ARGON"
+        },
+        {
+            "file": "tracking/TrackingTarget.js",
+            "line": 94,
+            "description": "removes a TrackedObject from this TrackingTarget. Once this method is called, the TrackedObject will no longer be updated.",
+            "itemtype": "method",
+            "name": "removeTrackedObject",
+            "params": [
+                {
+                    "name": "arObject",
+                    "description": "a TrackedObject instance",
+                    "type": "TrackedObject"
+                }
+            ],
+            "class": "TrackingTarget",
+            "module": "ARGON"
+        },
+        {
+            "file": "tracking/TrackingTarget.js",
+            "line": 112,
+            "access": "private",
+            "tagname": "",
+            "itemtype": "method",
+            "name": "updateTrackedObjects",
+            "description": "Updates all TrackedObjects associated with this TrackingTarget.",
+            "class": "TrackingTarget",
+            "module": "ARGON"
+        },
+        {
+            "file": "tracking/VuforiaDataSet.js",
+            "line": 11,
+            "itemtype": "property",
+            "name": "url",
+            "description": "the URL of the dataset's XML file",
+            "type": "String",
+            "default": "none",
+            "class": "VuforiaDataSet",
+            "module": "ARGON"
+        },
+        {
+            "file": "tracking/VuforiaDataSet.js",
+            "line": 19,
+            "itemtype": "property",
+            "name": "targets",
+            "description": "An Associative Array of VuforiaImageTargets or VuforiaMultiImageTargets in the dataset.",
+            "type": "Dictionary",
+            "class": "VuforiaDataSet",
+            "module": "ARGON"
+        },
+        {
+            "file": "util/MGRS.js",
+            "line": 161,
+            "description": "Converts between lat/lon and MGRS coordinates. Note that this static class\nis restricted to the WGS84 ellipsoid and does not support MGRS notations\nfor polar regions (i.e. above 84° North and below 80° South).\n\nIf Proj4js is loaded, this will be referenced as Proj4js.util.MGRS. If used\nstandalone, it will be referenced as window.MGRS.",
+            "static": 1,
+            "class": "",
+            "module": "ARGON"
+        },
+        {
+            "file": "util/MGRS.js",
+            "line": 173,
+            "description": "UTM zones are grouped, and assigned to one of a group of 6\nsets.\n\n{int} @private",
+            "class": "",
+            "module": "ARGON"
+        },
+        {
+            "file": "util/MGRS.js",
+            "line": 181,
+            "description": "The column letters (for easting) of the lower left value, per\nset.\n\n{string} @private",
+            "class": "",
+            "module": "ARGON"
+        },
+        {
+            "file": "util/MGRS.js",
+            "line": 189,
+            "description": "The row letters (for northing) of the lower left value, per\nset.\n\n{string} @private",
+            "class": "",
+            "module": "ARGON"
+        },
+        {
+            "file": "util/MGRS.js",
+            "line": 203,
+            "description": "Conversion of lat/lon to MGRS.",
+            "params": [
+                {
+                    "name": "ll",
+                    "description": "Object literal with lat and lon properties on a\n    WGS84 ellipsoid.",
+                    "type": "Object"
+                },
+                {
+                    "name": "accuracy",
+                    "description": "Accuracy in digits (5 for 1 m, 4 for 10 m, 3 for\n     100 m, 4 for 1000 m or 5 for 10000 m). Optional, default is 5.",
+                    "type": "Int"
+                }
+            ],
+            "return": {
+                "description": "the MGRS string for the given location and accuracy.",
+                "type": "String"
+            },
+            "class": "",
+            "module": "ARGON"
+        },
+        {
+            "file": "util/MGRS.js",
+            "line": 217,
+            "description": "Conversion of MGRS to lat/lon.",
+            "params": [
+                {
+                    "name": "mgrs",
+                    "description": "MGRS string.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "An array with left (longitude), bottom (latitude), right\n    (longitude) and top (latitude) values in WGS84, representing the\n    bounding box for the provided MGRS reference.",
+                "type": "Array"
+            },
+            "class": "",
+            "module": "ARGON"
+        },
+        {
+            "file": "util/MGRS.js",
+            "line": 230,
+            "description": "Conversion from degrees to radians.",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "deg",
+                    "description": "the angle in degrees.",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "the angle in radians.",
+                "type": "Number"
+            },
+            "class": "",
+            "module": "ARGON"
+        },
+        {
+            "file": "util/MGRS.js",
+            "line": 241,
+            "description": "Conversion from radians to degrees.",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "rad",
+                    "description": "the angle in radians.",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "the angle in degrees.",
+                "type": "Number"
+            },
+            "class": "",
+            "module": "ARGON"
+        },
+        {
+            "file": "util/MGRS.js",
+            "line": 252,
+            "description": "Converts a set of Longitude and Latitude co-ordinates to UTM\nusing the WGS84 ellipsoid.",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "ll",
+                    "description": "Object literal with lat and lon properties\n    representing the WGS84 coordinate to be converted.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "Object literal containing the UTM value with easting,\n    northing, zoneNumber and zoneLetter properties, and an optional\n    accuracy property in digits. Returns null if the conversion failed.",
+                "type": "Object"
+            },
+            "class": "",
+            "module": "ARGON"
+        },
+        {
+            "file": "util/MGRS.js",
+            "line": 351,
+            "description": "Converts UTM coords to lat/long, using the WGS84 ellipsoid. This is a convenience\nclass where the Zone can be specified as a single string eg.\"60N\" which\nis then broken down into the ZoneNumber and ZoneLetter.",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "utm",
+                    "description": "An object literal with northing, easting, zoneNumber\n    and zoneLetter properties. If an optional accuracy property is\n    provided (in meters), a bounding box will be returned instead of\n    latitude and longitude.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "An object literal containing either lat and lon values\n    (if no accuracy was provided), or top, right, bottom and left values\n    for the bounding box calculated according to the provided accuracy.\n    Returns null if the conversion failed.",
+                "type": "Object"
+            },
+            "class": "",
+            "module": "ARGON"
+        },
+        {
+            "file": "util/MGRS.js",
+            "line": 453,
+            "description": "Calculates the MGRS letter designator for the given latitude.",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "lat",
+                    "description": "The latitude in WGS84 to get the letter designator\n    for.",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "The letter designator.",
+                "type": "Char"
+            },
+            "class": "",
+            "module": "ARGON"
+        },
+        {
+            "file": "util/MGRS.js",
+            "line": 509,
+            "description": "Encodes a UTM location as MGRS string.",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "utm",
+                    "description": "An object literal with easting, northing,\n    zoneLetter, zoneNumber",
+                    "type": "Object"
+                },
+                {
+                    "name": "accuracy",
+                    "description": "Accuracy in digits (1-5).",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "MGRS string for the given UTM location.",
+                "type": "String"
+            },
+            "class": "",
+            "module": "ARGON"
+        },
+        {
+            "file": "util/MGRS.js",
+            "line": 528,
+            "description": "Get the two letter 100k designator for a given UTM easting,\nnorthing and zone number value.",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "easting",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "northing",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "zoneNumber",
+                    "description": "",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "the two letter 100k designator for the given UTM location."
+            },
+            "class": "",
+            "module": "ARGON"
+        },
+        {
+            "file": "util/MGRS.js",
+            "line": 545,
+            "description": "Given a UTM zone number, figure out the MGRS 100K set it is in.",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "i",
+                    "description": "An UTM zone number.",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "the 100k set the UTM zone is in.",
+                "type": "Number"
+            },
+            "class": "",
+            "module": "ARGON"
+        },
+        {
+            "file": "util/MGRS.js",
+            "line": 560,
+            "description": "Get the two-letter MGRS 100k designator given information\ntranslated from the UTM northing, easting and zone number.",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "column",
+                    "description": "the column index as it relates to the MGRS\n       100k set spreadsheet, created from the UTM easting.\n       Values are 1-8.",
+                    "type": "Number"
+                },
+                {
+                    "name": "row",
+                    "description": "the row index as it relates to the MGRS 100k set\n       spreadsheet, created from the UTM northing value. Values\n       are from 0-19.",
+                    "type": "Number"
+                },
+                {
+                    "name": "parm",
+                    "description": "the set block, as it relates to the MGRS 100k set\n      spreadsheet, created from the UTM zone. Values are from\n       1-60.",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "two letter MGRS 100k code."
+            },
+            "class": "",
+            "module": "ARGON"
+        },
+        {
+            "file": "util/MGRS.js",
+            "line": 639,
+            "description": "Decode the UTM parameters from a MGRS string.",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "mgrsString",
+                    "description": "an UPPERCASE coordinate string is expected.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "An object literal with easting, northing, zoneLetter,\n    zoneNumber and accuracy (in meters) properties.",
+                "type": "Object"
+            },
+            "class": "",
+            "module": "ARGON"
+        },
+        {
+            "file": "util/MGRS.js",
+            "line": 737,
+            "description": "Given the first letter from a two-letter MGRS 100k zone, and given the\nMGRS table set for the zone number, figure out the easting value that\nshould be added to the other, secondary easting value.",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "The first letter from a two-letter MGRS 100´k zone.",
+                    "type": "Char"
+                },
+                {
+                    "name": "set",
+                    "description": "The MGRS table set for the zone number.",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "The easting value for the given letter and set.",
+                "type": "Number"
+            },
+            "class": "",
+            "module": "ARGON"
+        },
+        {
+            "file": "util/MGRS.js",
+            "line": 773,
+            "description": "Given the second letter from a two-letter MGRS 100k zone, and given the\nMGRS table set for the zone number, figure out the northing value that\nshould be added to the other, secondary northing value. You have to\nremember that Northings are determined from the equator, and the vertical\ncycle of letters mean a 2000000 additional northing meters. This happens\napprox. every 18 degrees of latitude. This method does *NOT* count any\nadditional northings. You have to figure out how many 2000000 meters need\nto be added for the zone letter of the MGRS coordinate.",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "n",
+                    "description": "Second letter of the MGRS 100k zone",
+                    "type": "Char"
+                },
+                {
+                    "name": "set",
+                    "description": "The MGRS table set number, which is dependent on the\n    UTM zone number.",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "The northing value for the given letter and set.",
+                "type": "Number"
+            },
+            "class": "",
+            "module": "ARGON"
+        },
+        {
+            "file": "util/MGRS.js",
+            "line": 823,
+            "description": "The function getMinNorthing returns the minimum northing value of a MGRS\nzone.\n\nPorted from Geotrans' c Lattitude_Band_Value structure table.",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "zoneLetter",
+                    "description": "The MGRS zone to get the min northing for.",
+                    "type": "Char"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "",
+            "module": "ARGON"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "unknown tag: abstract",
+            "line": " tracking/TrackingTarget.js:1"
+        },
+        {
+            "message": "Missing item type",
+            "line": " core/Channel.js:25"
+        },
+        {
+            "message": "Missing item type\nTHREE JS Integration",
+            "line": " core/argon.js:467"
+        },
+        {
+            "message": "Missing item type\nConverts between lat/lon and MGRS coordinates. Note that this static class\nis restricted to the WGS84 ellipsoid and does not support MGRS notations\nfor polar regions (i.e. above 84° North and below 80° South).\n\nIf Proj4js is loaded, this will be referenced as Proj4js.util.MGRS. If used\nstandalone, it will be referenced as window.MGRS.",
+            "line": " util/MGRS.js:161"
+        },
+        {
+            "message": "Missing item type\nUTM zones are grouped, and assigned to one of a group of 6\nsets.\n\n{int} @private",
+            "line": " util/MGRS.js:173"
+        },
+        {
+            "message": "Missing item type\nThe column letters (for easting) of the lower left value, per\nset.\n\n{string} @private",
+            "line": " util/MGRS.js:181"
+        },
+        {
+            "message": "Missing item type\nThe row letters (for northing) of the lower left value, per\nset.\n\n{string} @private",
+            "line": " util/MGRS.js:189"
+        },
+        {
+            "message": "Missing item type\nConversion of lat/lon to MGRS.",
+            "line": " util/MGRS.js:203"
+        },
+        {
+            "message": "Missing item type\nConversion of MGRS to lat/lon.",
+            "line": " util/MGRS.js:217"
+        },
+        {
+            "message": "Missing item type\nConversion from degrees to radians.",
+            "line": " util/MGRS.js:230"
+        },
+        {
+            "message": "Missing item type\nConversion from radians to degrees.",
+            "line": " util/MGRS.js:241"
+        },
+        {
+            "message": "Missing item type\nConverts a set of Longitude and Latitude co-ordinates to UTM\nusing the WGS84 ellipsoid.",
+            "line": " util/MGRS.js:252"
+        },
+        {
+            "message": "Missing item type\nConverts UTM coords to lat/long, using the WGS84 ellipsoid. This is a convenience\nclass where the Zone can be specified as a single string eg.\"60N\" which\nis then broken down into the ZoneNumber and ZoneLetter.",
+            "line": " util/MGRS.js:351"
+        },
+        {
+            "message": "Missing item type\nCalculates the MGRS letter designator for the given latitude.",
+            "line": " util/MGRS.js:453"
+        },
+        {
+            "message": "Missing item type\nEncodes a UTM location as MGRS string.",
+            "line": " util/MGRS.js:509"
+        },
+        {
+            "message": "Missing item type\nGet the two letter 100k designator for a given UTM easting,\nnorthing and zone number value.",
+            "line": " util/MGRS.js:528"
+        },
+        {
+            "message": "Missing item type\nGiven a UTM zone number, figure out the MGRS 100K set it is in.",
+            "line": " util/MGRS.js:545"
+        },
+        {
+            "message": "Missing item type\nGet the two-letter MGRS 100k designator given information\ntranslated from the UTM northing, easting and zone number.",
+            "line": " util/MGRS.js:560"
+        },
+        {
+            "message": "Missing item type\nDecode the UTM parameters from a MGRS string.",
+            "line": " util/MGRS.js:639"
+        },
+        {
+            "message": "Missing item type\nGiven the first letter from a two-letter MGRS 100k zone, and given the\nMGRS table set for the zone number, figure out the easting value that\nshould be added to the other, secondary easting value.",
+            "line": " util/MGRS.js:737"
+        },
+        {
+            "message": "Missing item type\nGiven the second letter from a two-letter MGRS 100k zone, and given the\nMGRS table set for the zone number, figure out the northing value that\nshould be added to the other, secondary northing value. You have to\nremember that Northings are determined from the equator, and the vertical\ncycle of letters mean a 2000000 additional northing meters. This happens\napprox. every 18 degrees of latitude. This method does *NOT* count any\nadditional northings. You have to figure out how many 2000000 meters need\nto be added for the zone letter of the MGRS coordinate.",
+            "line": " util/MGRS.js:773"
+        },
+        {
+            "message": "Missing item type\nThe function getMinNorthing returns the minimum northing value of a MGRS\nzone.\n\nPorted from Geotrans' c Lattitude_Band_Value structure table.",
+            "line": " util/MGRS.js:823"
+        }
+    ]
+}
